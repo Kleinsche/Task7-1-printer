@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		6C3D75201D4A3A5600764401 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D751F1D4A3A5600764401 /* AppDelegate.swift */; };
 		6C3D75221D4A3A5600764401 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D75211D4A3A5600764401 /* ViewController.swift */; };
-		6C3D75251D4A3A5600764401 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C3D75231D4A3A5600764401 /* Main.storyboard */; };
 		6C3D75271D4A3A5600764401 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C3D75261D4A3A5600764401 /* Assets.xcassets */; };
 		6C3D752A1D4A3A5600764401 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C3D75281D4A3A5600764401 /* LaunchScreen.storyboard */; };
 		6C3D75351D4A3A5600764401 /* Task7_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D75341D4A3A5600764401 /* Task7_1Tests.swift */; };
 		6C3D75401D4A3A5600764401 /* Task7_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D753F1D4A3A5600764401 /* Task7_1UITests.swift */; };
+		6C3D754E1D4A3A6D00764401 /* drawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D754D1D4A3A6D00764401 /* drawView.swift */; };
+		6C3D75501D4A3A7800764401 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C3D754F1D4A3A7800764401 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 		6C3D751C1D4A3A5600764401 /* Task7-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task7-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C3D751F1D4A3A5600764401 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C3D75211D4A3A5600764401 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6C3D75241D4A3A5600764401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C3D75261D4A3A5600764401 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C3D75291D4A3A5600764401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C3D752B1D4A3A5600764401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		6C3D753B1D4A3A5600764401 /* Task7-1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Task7-1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C3D753F1D4A3A5600764401 /* Task7_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task7_1UITests.swift; sourceTree = "<group>"; };
 		6C3D75411D4A3A5600764401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C3D754D1D4A3A6D00764401 /* drawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drawView.swift; sourceTree = "<group>"; };
+		6C3D754F1D4A3A7800764401 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,9 @@
 			children = (
 				6C3D751F1D4A3A5600764401 /* AppDelegate.swift */,
 				6C3D75211D4A3A5600764401 /* ViewController.swift */,
-				6C3D75231D4A3A5600764401 /* Main.storyboard */,
+				6C3D754D1D4A3A6D00764401 /* drawView.swift */,
 				6C3D75261D4A3A5600764401 /* Assets.xcassets */,
+				6C3D754F1D4A3A7800764401 /* Main.storyboard */,
 				6C3D75281D4A3A5600764401 /* LaunchScreen.storyboard */,
 				6C3D752B1D4A3A5600764401 /* Info.plist */,
 			);
@@ -193,16 +196,18 @@
 				TargetAttributes = {
 					6C3D751B1D4A3A5600764401 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = VAG9DN592V;
+						LastSwiftMigration = 0810;
 					};
 					6C3D752F1D4A3A5600764401 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = VAG9DN592V;
+						LastSwiftMigration = 0810;
 						TestTargetID = 6C3D751B1D4A3A5600764401;
 					};
 					6C3D753A1D4A3A5600764401 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = VAG9DN592V;
+						LastSwiftMigration = 0810;
 						TestTargetID = 6C3D751B1D4A3A5600764401;
 					};
 				};
@@ -232,9 +237,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C3D75501D4A3A7800764401 /* Main.storyboard in Resources */,
 				6C3D752A1D4A3A5600764401 /* LaunchScreen.storyboard in Resources */,
 				6C3D75271D4A3A5600764401 /* Assets.xcassets in Resources */,
-				6C3D75251D4A3A5600764401 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C3D754E1D4A3A6D00764401 /* drawView.swift in Sources */,
 				6C3D75221D4A3A5600764401 /* ViewController.swift in Sources */,
 				6C3D75201D4A3A5600764401 /* AppDelegate.swift in Sources */,
 			);
@@ -296,14 +302,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6C3D75231D4A3A5600764401 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6C3D75241D4A3A5600764401 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6C3D75281D4A3A5600764401 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -404,10 +402,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Task7-1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "apple.Task7-1";
+				PRODUCT_BUNDLE_IDENTIFIER = apple.use;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -415,10 +415,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Task7-1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "apple.Task7-1";
+				PRODUCT_BUNDLE_IDENTIFIER = apple.use;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -430,6 +432,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "apple.Task7-1Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Task7-1.app/Task7-1";
 			};
 			name = Debug;
@@ -442,6 +445,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "apple.Task7-1Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Task7-1.app/Task7-1";
 			};
 			name = Release;
@@ -453,6 +457,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "apple.Task7-1UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Task7-1";
 			};
 			name = Debug;
@@ -464,6 +469,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "apple.Task7-1UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Task7-1";
 			};
 			name = Release;
@@ -487,6 +493,7 @@
 				6C3D75461D4A3A5600764401 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C3D75471D4A3A5600764401 /* Build configuration list for PBXNativeTarget "Task7-1Tests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +502,7 @@
 				6C3D75491D4A3A5600764401 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C3D754A1D4A3A5600764401 /* Build configuration list for PBXNativeTarget "Task7-1UITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +511,7 @@
 				6C3D754C1D4A3A5600764401 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
